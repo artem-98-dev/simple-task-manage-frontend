@@ -8,6 +8,8 @@ function TaskList() {
 	const [editText, setEditText] = useState("");
 	const [loading, setLoading] = useState(false);
 
+	console.log(import.meta.env);
+
 	const API_URL =
 		import.meta.env.VITE_TASK_API_URL || "http://localhost/api/tasks";
 

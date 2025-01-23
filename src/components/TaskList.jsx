@@ -9,7 +9,7 @@ function TaskList() {
 	const [loading, setLoading] = useState(false);
 
 	const API_URL =
-		import.meta.env.TASK_API_URL || "http://localhost:5000/api/tasks";
+		import.meta.env.VITE_TASK_API_URL || "http://localhost/api/tasks";
 
 	useEffect(() => {
 		fetchTasks();
